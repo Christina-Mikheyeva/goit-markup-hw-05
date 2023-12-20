@@ -246,7 +246,7 @@
        padding-right: 32px;
        padding-bottom: 16px;
        padding-left: 32px;
-       /* margin: 0 auto; */
+       margin: 0 auto;
        border: none;
        border-radius: 4px;
 
@@ -523,6 +523,12 @@
    /* ====================================== SUBSCRIBE ======================================================== */
 
 
+   .footer-form {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+   }
+
    .subscribe-form {
         display: inline-flex;
         flex-direction: column;
@@ -559,20 +565,31 @@
    }
 
    /*-------- BUTTON *----------*/
-
    .subscribe {
         padding: 8px 24px;
         gap: 16px;
     }
+   /*--------------------------*/
+    
 
-    .subscribe::after {
-        content: "";
-        width: 24px;
-        height: 24px;
+/* ====================================== MODAL WINDOW ====================================== */
 
-        background-image: url(../images/subscribe-plane-icon.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: transparent;
-        background-size: 24px 24px;
-    }
+.modal {
+display: flex;
+flex-direction: column;
+padding: 15px;
+}
+
+textarea {
+    resize: none;
+}
+
+.policy {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.modalbth {
+
+}

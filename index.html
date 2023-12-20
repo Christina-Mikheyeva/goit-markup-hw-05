@@ -474,7 +474,7 @@
         </div>
         <!------------------------------ Subscribe form ------------------------------>
 
-        <form name="subscribe" autocomplete="on" novalidate>
+        <form class="footer-form" name="subscribe" autocomplete="on" novalidate>
           <div class="subscribe-form">
             <label class="subscribe-label" for="e-mail">Subscribe</label>
             <input
@@ -485,9 +485,63 @@
               id="e-mail"
             />
           </div>
-          <button class="subscribe button" type="submit">Subscribe</button>
+          <button class="subscribe button" type="submit">
+            Subscribe
+            <svg class="svg-form" width="24" height="24">
+              <use href="./images/icons.svg#icon-plane"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </footer>
+    <!------------------------------ MODAL WINDOW ------------------------------>
+    <div class="container">
+      <form class="modal-form" name="modal" autocomplete="on" novalidate>
+        <p>Leave your contacts and we will call you back</p>
+        <div class="modal">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Jon Douw"
+            autofocus
+          />
+
+          <label for="phone">Phone</label>
+          <input
+            id="phone"
+            type="tel"
+            name="phone"
+            placeholder="+61 4xx xxx xxx"
+          />
+
+          <label for="e-mail">E-mail</label>
+          <input
+            id="e-mail"
+            type="email"
+            name="e-mail"
+            placeholder="goit@gavmail.com"
+          />
+
+          <label for="comment">Comment</label>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            placeholder="Text input"
+          ></textarea>
+
+          <div class="policy">
+            <input type="checkbox" name="policy" value="policy" />
+            <label for="policy"
+              >I accept the terms and conditions of the Privacy Policy
+            </label>
+          </div>
+
+          <button class="modalbth button" type="submit">Send</button>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
