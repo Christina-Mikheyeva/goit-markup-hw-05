@@ -494,11 +494,14 @@
         </form>
       </div>
     </footer>
-    <!------------------------------ MODAL WINDOW ------------------------------>
+    <!--Modal window -->
+    <div class="backdrop"></div>
+
     <div class="container">
-      <form class="modal-form" name="modal" autocomplete="on" novalidate>
-        <p>Leave your contacts and we will call you back</p>
-        <div class="modal">
+      <p>Leave your contacts and we will call you back</p>
+
+      <div class="modal">
+        <form class="modal-form" name="modal" autocomplete="on" novalidate>
           <label for="name">Name</label>
           <input
             id="name"
@@ -540,8 +543,8 @@
           </div>
 
           <button class="modalbth button" type="submit">Send</button>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </body>
 </html>

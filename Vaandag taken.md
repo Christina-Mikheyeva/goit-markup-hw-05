@@ -1,4 +1,4 @@
 Wat te doen vaandag:
 
-1. SVG doe het goed, gewoon bedoel ik.
-2. Centreer op de vliegtuig.
+1. Alles
+2. Video 20:00

@@ -3,6 +3,7 @@
        --ocean: #404BBF;
        /*hover, focus*/
        --navy-blue-color: #2E2F42;
+       --navy-blue-modal: #2E2F4266;
        --slat-color: #434455;
        --cloud-color: #F4F4FD;
        --cornflower: #E7E9FC;
@@ -574,10 +575,34 @@
 
 /* ====================================== MODAL WINDOW ====================================== */
 
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 676px;
+    /* width: 100vw;
+    height: 100vh; */
+    flex-shrink: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    background-color: var(--navy-blue-modal);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visible 250ms cubic-bezier(0.4, 0, 0.2,1);
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+
+}
+
 .modal {
-display: flex;
-flex-direction: column;
-padding: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
 }
 
 textarea {
@@ -591,5 +616,5 @@ textarea {
 }
 
 .modalbth {
-
+    color: maroon;
 }
