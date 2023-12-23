@@ -599,10 +599,9 @@
 
 }
 
-.modal {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
+.modal-form {
+display: flex;
+flex-direction: column;
 }
 
 textarea {
@@ -613,6 +612,20 @@ textarea {
     display: flex;
     align-items: center;
     gap: 8px;
+    
+    color: var(--light-slate);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;/* 0.48px/12 */
+}
+
+.policy-text {
+    color: var(--iris-color);
+    font-size: inherit;
+
+    line-height: 1.33; /* 16px/12 */
+    letter-spacing: inherit;
+    text-decoration-line: underline;
 }
 
 .modalbth {
