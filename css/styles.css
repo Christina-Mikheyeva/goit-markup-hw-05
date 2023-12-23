@@ -1,18 +1,16 @@
    :root {
        --iris-color: #4D5AE5;
-       --ocean: #404BBF;
-       /*hover, focus*/
+       --ocean: #404BBF; /*hover, focus*/
        --navy-blue-color: #2E2F42;
        --navy-blue-modal: #2E2F4266;
        --slat-color: #434455;
        --cloud-color: #F4F4FD;
        --cornflower: #E7E9FC;
-       --grey: rgba(46, 47, 66, 0.70);
-       /* hero gradient */
-       --light-slate: #8E8F99;
-       /*border color*/
-       --green: #31D0AA;
-       /*soc icons focus color in the footer*/
+       --grey: rgba(46, 47, 66, 0.70); /* hero gradient */
+       --light-slate: #8E8F99; /*border color*/
+       --green: #31D0AA; /*soc icons focus color in the footer*/
+       --dairy: #FCFCFC; /*modal window*/
+
    }
 
    .container {
@@ -581,6 +579,9 @@
     left: 0;
     width: 1440px;
     height: 676px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* width: 100vw;
     height: 100vh; */
     flex-shrink: 0;
@@ -595,13 +596,45 @@
 .is-open {
     opacity: 1;
     visibility: visible;
-    pointer-events: visible;
+    pointer-events: initial;
 
 }
 
+.modal {
+    position: relative;
+    background-color: var(--dairy);
+    border-radius: 4px;
+}
+
+.close-btn{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 4px solid var(--cornflower);
+}
+
+.close-svg {
+    flex-shrink: 0;
+
+    fill: var(--navy-blue-color);
+    stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.10);
+}
+
 .modal-form {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    width: 408px;
+    min-height: 584px;
+    flex-shrink: 0;
+    padding: 24px;
 }
 
 textarea {
