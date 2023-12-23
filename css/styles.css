@@ -248,6 +248,7 @@
        margin: 0 auto;
        border: none;
        border-radius: 4px;
+       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
        color: white;
        background-color: var(--iris-color);
@@ -336,10 +337,6 @@
 
        background: #ffffff;
        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-   }
-
-   .padding-zero {
-       padding-bottom: 0;
    }
 
    .item {
@@ -567,6 +564,7 @@
    .subscribe {
         padding: 8px 24px;
         gap: 16px;
+        box-shadow: none;
     }
    /*--------------------------*/
     
@@ -577,13 +575,11 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 1440px;
-    height: 676px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 100vw;
-    height: 100vh; */
+    width: 100vw;
+    height: 100vh;
     flex-shrink: 0;
     opacity: 0;
     visibility: hidden;
@@ -602,6 +598,8 @@
 
 .modal {
     position: relative;
+    top: 0;
+    left: 0;
     background-color: var(--dairy);
     border-radius: 4px;
     padding-top: 72px;
@@ -645,27 +643,51 @@
 .modal-form {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 
 .modal-label {
     display: block;
-    margin-bottom: 4px;
+
+    color: var(--light-slate);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em; /* 0.48px/12 */
+}
+
+.wrapper-input {
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .input-field {
-    position: relative;
+    min-width: 360px;
+    height: 40px;
+    flex-shrink: 0;
+    padding-left: 38px;
+
+    border-radius: 4px;
+    border: 1px solid var(--navy-blue-modal);
+    background-color: var(--dairy);
 }
 
-.person-svg {
+.input-svg {
     position: absolute;
-    top: 50px;
-    left: 16px;;
-    transform: translateY(-50%)
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+
+    fill: var(--navy-blue-color);
 }
 
 textarea {
     resize: none;
     margin-bottom: 16px;
+}
+
+.textarea.padding {
+    padding: 8px 16px 98px;
 }
 
 .policy {
@@ -687,8 +709,4 @@ textarea {
     line-height: 1.33; /* 16px/12 */
     letter-spacing: inherit;
     text-decoration-line: underline;
-}
-
-.modalbth {
-    color: maroon;
 }
