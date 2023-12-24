@@ -567,19 +567,25 @@
             class="input-field textarea padding"
             name="comment"
             id="comment"
-            cols="30"
+            cols="7"
             placeholder="Text input"
           ></textarea>
 
           <div class="policy">
-            <input type="checkbox" name="policy" value="policy" />
-            <label for="policy"
-              >I accept the terms and conditions of the
-              <span class="policy-text">Privacy Policy</span>
+            <input type="checkbox" name="policy" id="policy" />
+            <label class="policy-label" for="policy">
+              <span class="policy-checkbox-square">
+                <svg class="policy-svg" width="16" height="16">
+                  <use href="./images/icons.svg#icon-bird"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="./"><span class="policy-text">Privacy Policy</span></a>
             </label>
           </div>
-          <button class="modal-btn button" type="submit">Send</button>
         </form>
+
+        <button class="modal-btn button" type="submit">Send</button>
       </div>
     </div>
   </body>
