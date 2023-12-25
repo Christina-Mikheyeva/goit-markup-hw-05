@@ -589,6 +589,7 @@
 .modal {
     position: absolute;
     top: 50%;
+    left: 50%;
     transform: translateY(-50%);
     background-color: var(--dairy);
     border-radius: 4px;
@@ -619,17 +620,12 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover {
-    background-color: var(--ocean);
-    border: none;
-}
-
-.close-btn:active, 
-.close-btn:focus {
+.close-btn:focus,
+.close-btn:hover,
+.close-btn:active {
 background-color: var(--ocean);
 border: none;
 }
-
 
 .modal-text {
     color: var(--navy-blue-color);
@@ -645,8 +641,9 @@ border: none;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover + .close-svg, 
-.close-btn:focus + .close-svg {
+.close-btn:focus .close-svg,
+.close-btn:hover .close-svg,
+.close-btn:active .close-svg {
     fill: #ffffff;
 }
 
@@ -738,14 +735,14 @@ margin-bottom: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-policy:checked + .policy-checkbox-square {
+.input-policy:checked + .policy-label .policy-checkbox-square {
 background-color: var(--ocean);
 border: none;
 fill: var(--cloud-color);
 }
 
 
-.policy {
+.wrapper-policy {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -764,4 +761,8 @@ fill: var(--cloud-color);
     line-height: 1.33; /* 16px/12 */
     letter-spacing: inherit;
     text-decoration-line: underline;
+}
+
+.modal-btn {
+    min-width: 169px;
 }
