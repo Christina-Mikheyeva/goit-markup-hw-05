@@ -569,7 +569,7 @@
           <div class="wrapper-textarea">
             <label class="modal-label" for="user-comment">Comment</label>
             <textarea
-              class="input-field textarea padding"
+              class="input-field textarea"
               name="comment"
               id="user-comment"
               cols="7"
@@ -578,10 +578,16 @@
           </div>
 
           <div class="policy">
-            <input type="checkbox" name="policy" id="policy" />
-            <label class="policy-label" for="policy">
+            <input
+              class="input-policy visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="policy-label" for="user-privacy">
               <span class="policy-checkbox-square">
-                <svg class="policy-svg" width="16" height="16">
+                <svg class="policy-svg" width="10" height="8">
                   <use href="./images/icons.svg#icon-bird"></use>
                 </svg>
               </span>
