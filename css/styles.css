@@ -238,9 +238,6 @@
      /*-------- BUTTON *----------*/
 
    .button {
-       /* display: inline-block;
-       justify-content: center;
-       align-items: center; */
        display: block;
        padding-top: 16px;
        padding-right: 32px;
@@ -520,7 +517,7 @@
    /* ====================================== SUBSCRIBE ======================================================== */
 
 
-   .footer-form {
+   /* .footer-form {
     display: flex;
     justify-content: center;
     align-items: end;
@@ -546,29 +543,76 @@
         color: #ffffff;
         font-family: Roboto;
         font-size: 12px;
-        line-height: 2.0; /* 24px/12 */
-        letter-spacing: 0.04em; /* 0.48px/12 */
+        line-height: 2.0; 
+        letter-spacing: 0.04em; 
    }
 
    .subscribe-input {
         border-radius: 4px;
         border: 1px solid #ffffff;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        /* width: 264px; */
         min-height: 40px;
         flex-shrink: 0;
 
         background-color: transparent;
-   }
+   } */
 
    /*-------- BUTTON *----------*/
-   .subscribe {
+   /* .subscribe {
         padding: 8px 24px;
         gap: 16px;
         box-shadow: none;
-    }
+    } */
    /*--------------------------*/
-    
+
+   
+/* ONE MORE TIME Subcribing form */
+
+
+    .subscribe-text {
+        margin-bottom: 16px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+    .subscribe-form {
+        display: flex;
+        gap: 24px;
+    }
+
+    .subscribe-input {
+        width: 264px;
+        height: 40px;
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        padding-left: 16px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        color: #ffffff;
+    }
+
+    .subscribe-input::placeholder {
+        color: #ffffff;
+    }
+
+    .subscribe-btn {
+        min-width: 165px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .subscribe-svg{
+        margin-left: 16px;
+    }
+
+
+
+   
 
 /* ====================================== MODAL WINDOW ====================================== */
 
@@ -747,11 +791,4 @@ fill: var(--cloud-color);
     line-height: 1.33; /* 16px/12 */
     letter-spacing: inherit;
     text-decoration-line: underline;
-}
-
-
-
-.modal-btn {
-
-
 }
