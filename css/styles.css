@@ -365,7 +365,11 @@
 
    .section-topic,
    .section-text {
-    margin-bottom: 8px;
+     margin-bottom: 8px;
+   }
+
+   .margin-b-zero {
+       margin-bottom: 0;
    }
 
    .social-networks-list {
@@ -741,7 +745,6 @@ border: none;
 fill: var(--cloud-color);
 }
 
-
 .wrapper-policy {
     display: flex;
     align-items: center;
@@ -750,7 +753,7 @@ fill: var(--cloud-color);
     
     color: var(--light-slate);
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;/* 0.48px/12 */
 }
 
