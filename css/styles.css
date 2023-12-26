@@ -478,11 +478,11 @@
    }
 
    .position-socialtext{
-    margin-right: 120px;
+    margin-right: auto;
    }
 
    .position-socialicons{
-    margin-right: 120px;
+    margin-right: auto;
    }
 
    .text-studio,
@@ -594,7 +594,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
     background-color: var(--dairy);
     border-radius: 4px;
     padding-top: 72px;
@@ -655,7 +655,6 @@ border: none;
 .modal-form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
 }
 
 .wrapper-label {
